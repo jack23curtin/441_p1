@@ -32,20 +32,56 @@
                                     <action selector="clickedTheButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0gb-pO-v7v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlN-1C-beS">
+                                <rect key="frame" x="66" y="325" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cat Button"/>
+                                <connections>
+                                    <action selector="selectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLG-G7-0Wt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-02-19 at 9.56.50 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-hZ-yUU" userLabel="Catimage">
+                                <rect key="frame" x="59" y="394" width="300" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-V7-Xya">
+                                <rect key="frame" x="140" y="601" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lgO-y7-dwQ">
+                                <rect key="frame" x="155" y="683" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="selectDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Br-ph-PEE"/>
+                                </connections>
+                            </slider>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZtY-8T-BmF">
+                                <rect key="frame" x="87" y="734" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="catLabel" destination="JcP-hZ-yUU" id="2az-7k-g3y"/>
+                        <outlet property="dogLabel" destination="ZtY-8T-BmF" id="l1y-t9-qqd"/>
+                        <outlet property="dogSlider" destination="lgO-y7-dwQ" id="ApW-2U-v5C"/>
+                        <outlet property="meowLabel" destination="5qj-V7-Xya" id="9lK-31-svK"/>
                         <outlet property="myLabel" destination="DPQ-Ut-c4j" id="TUF-BQ-L2K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+            <point key="canvasLocation" x="-146" y="87"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2021-02-19 at 9.56.50 AM.png" width="318" height="368"/>
+        <image name="dog2.png" width="451" height="437"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
